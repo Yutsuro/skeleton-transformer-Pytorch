@@ -134,3 +134,6 @@ dmypy.json
 # test code
 test.py
 tests/
+
+# Edit Requirements
+edit.py
