@@ -20,9 +20,9 @@ pip install skeletorch
 
 All parameters are required.
 
-**timesteps:** Timesteps of input time-series data (equal to number of frames, mentioned as 'T' in the paper)
-**kpts_dim:** Dimentions of keypoints (usually 2 (x, y) or 3 (x, y, z))
-            input_kpts_num: Number of joints in original keypoints (mentioned as 'N' in the paper)
+**timesteps:** Timesteps of input time-series data (equal to number of frames, mentioned as 'T' in the paper)  
+**kpts_dim:** Dimentions of keypoints (usually 2 (x, y) or 3 (x, y, z))  
+**input_kpts_num:** Number of joints in original keypoints (mentioned as 'N' in the paper)  
 **output_dim:** Dimentions of output (mentioned as 'M' in the paper)
 
 ##### Input:
