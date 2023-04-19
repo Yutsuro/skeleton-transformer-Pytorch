@@ -4,7 +4,7 @@ Pytorch implementation of "skeleton transformer module", which is mentioned in [
 
 ## Install
 
-You can install this module from [PyPI](https://pypi.org/project/skeletorch/0.1.0/).
+You can install this module from [PyPI](https://pypi.org/project/skeletorch).
 
 ```sh
 pip install skeletorch
