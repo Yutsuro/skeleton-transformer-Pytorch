@@ -41,11 +41,13 @@ kpts_dim = 3
 input_kpts_num = 17
 output_dim = 10
 
-# input
+# input (the size is (20, 51) in this example)
 x = torch.Tensor(torch.randn(timesteps, kpts_dim*input_kpts_num))
 
-# make instance
+# make layer
 layer = SkeletonTransformer(timesteps, kpts_dim, input_kpts_num, output_dim)
 
 layer(x)
 ```
+
+Of course you can use this module in your Pytorch network.
