@@ -1,2 +1,51 @@
-# skeleton-transformer-Pytorch
-Pytorch implementation of skeleton transformer module
+# Skeleton Transformer Module in Pytorch
+
+Pytorch implementation of "skeleton transformer module", which is mentioned in [Skeleton-based Action Recognition with Convolutional Neural Networks](https://arxiv.org/abs/1704.07595).
+
+## Install
+
+You can install this module from [PyPI](https://pypi.org/project/skeletorch/0.1.0/).
+
+```sh
+pip install skeletorch
+```
+
+## How to use
+
+### Module
+
+#### skeletorch.SkeletonTransformer
+
+##### Parameters:
+
+All parameters are required.
+
+**timesteps:** Timesteps of input time-series data (equal to number of frames, mentioned as 'T' in the paper)
+**kpts_dim:** Dimentions of keypoints (usually 2 (x, y) or 3 (x, y, z))
+            input_kpts_num: Number of joints in original keypoints (mentioned as 'N' in the paper)
+**output_dim:** Dimentions of output (mentioned as 'M' in the paper)
+
+##### Input:
+
+**x:** 2-dimentional tensor of shape (timesteps, input_kpts_num*kpts_dim)
+
+## Example        
+
+```python
+import torch
+from skeletorch import SkeletonTransformer
+
+# parameters
+timesteps = 20
+kpts_dim = 3
+input_kpts_num = 17
+output_dim = 10
+
+# input
+x = torch.Tensor(torch.randn(timesteps, kpts_dim*input_kpts_num))
+
+# make instance
+layer = SkeletonTransformer(timesteps, kpts_dim, input_kpts_num, output_dim)
+
+layer(x)
+```
