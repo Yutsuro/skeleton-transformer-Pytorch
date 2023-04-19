@@ -51,3 +51,8 @@ layer(x)
 ```
 
 Of course you can use this module in your Pytorch network.
+
+## Keras implementation
+
+We also have Keras implementation of this module:  
+[https://github.com/Yutsuro/skeleton-transformer-Keras](https://github.com/Yutsuro/skeleton-transformer-Keras)

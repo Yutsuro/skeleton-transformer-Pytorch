@@ -14,8 +14,8 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name=package_name,
-    description='Punycode Converter Library for Python',
-    version='0.1.0',
+    description='Pytorch implementation of skeleton transformer module',
+    version='0.1.1',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/Yutsuro/skeleton-transformer-Pytorch',
